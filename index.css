@@ -18,7 +18,7 @@ p {
     border: 0px;
     border-radius: 25px;
     color: rgba(0, 48, 110);
-    background-color: #00c1e3;
+    background-color: #77c9fcf5;
     transition-duration: 0.4s;
 }.button:hover {
     background-color: rgba(0, 123, 224, 0.963);
@@ -27,6 +27,104 @@ p {
 
 #profile {
     width: 25px;
+}
+
+/* Link Underline on hover  */
+.link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(0, 48, 110);
+}.link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 48, 110);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}.link:hover::before {
+    transform: scaleX(1);
+}
+
+/* Container 1 */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-child {
+    width: 50%;
+}
+.one {
+    padding-top: 35%;
+    padding-left: 10%;
+}
+
+/* Image over image */
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    object-fit: cover;
+    object-position: top;
+    height: 430px;
+    width: 750px;
+    z-index: 1;
+}
+.image2 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 715px;
+    z-index: 1;
+}
+
+/* Wave */
+.Ocean {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #77c9fcf5;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+}
+.Wave {
+    width: 3000px;
+    animation-name: swell;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: #bfe6fff5;
+    z-index: 2;
+    position: relative;
+}
+  @keyframes swell {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+/* Cart Container */
+.cart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cart-container-child {
+    padding: 10%;
 }
 
 /* Google translate button */

@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="images/Nebulae Soft (logo).png" type="image/x-icon">
 
     <!-- Css Link -->
-     <link rel="stylesheet" href="/Task-1/index.css">
+     <link rel="stylesheet" href="index.css">
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -115,44 +115,161 @@
       </div>
 
     <!-- Second Section - Carts Item -->
-    <div class="cart-container" style="background-color: #bfe6fff5;">
+    <div class="scroll-container" style="background-color: #bfe6fff5; position: relative; width: 100%;">
 
-        <div class="cart-container-child">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Left Scroll Button -->
+        <button class="scroll-left" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 10; background-color: #fff; border: none; cursor: pointer; padding: 10px; height: 50px; width: 50px;">
+            &#10094;
+        </button>
+
+        <!-- Card Container -->
+        <div class="cart-container" style="display: flex; overflow-x: hidden; scroll-behavior: smooth; width: 100%;">
+
+            <div class="cart-container-child" style="margin-left: 5%;">
+                <div class="card" style="width: 32rem; padding: 10%; padding-bottom: 1px;">
+                    <h1><p>Thirsty Buddha® Coconut Water</p></h1>
+                    <p>Nourish your body with the natural benefits of coconut water.</p>
+                    <button class="button" onclick="window.location.href='https://buddhabrands.ca/collections/thirsty-buddha-coconut-water'" style="width: 100px;">View All</button>
+                    <div class="card-body">
+                    <p class="card-text"><img id="card-img" src="https://buddhabrands.ca/cdn/shop/files/coco-water_390x310.png?v=1681418888" alt=""></p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="cart-container-child" style="margin-top: 3%;">
+                    <div class="card" style="width: 22rem; padding: 10%;">
+                        <div class="card-img-top" style="background-color: rgb(30, 185, 53);">
+                        <div class="parent">
+                            <img class="card-img-1" src="https://buddhabrands.ca/cdn/shop/files/Lines_600x.png?v=1676471949" />
+                            <img class="card-img-2" src="https://cdn.accentuate.io/6305467334844/1676753812851/classic-coconut-water-hover.png?v=1676753812851" />
+                        </div>
+                        </div>
+                        <div class="card-body">
+                        <h4><p class="card-text">Classic Coconut Water</p></h4>
+                        <p>490ml <span style="margin: 10px"></span> Pack of 12</p>
+                        <p style="text-align: right;">$39.48</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-container-child" style="margin-top: 3%;">
+                    <div class="card" style="width: 22rem; padding: 8%; padding-bottom: 3.5%;">
+                        <div class="card-img-top" style="background-color: rgb(30, 136, 185);">
+                        <div class="parent">
+                            <img class="card-img-1" src="https://buddhabrands.ca/cdn/shop/files/Lines_600x.png?v=1676471949" />
+                            <img class="card-img-2" src="https://cdn.accentuate.io/6305467498684/1676123772448/seller2-hover.webp?v=1679003348888" />
+                        </div>
+                        </div>
+                        <div class="card-body">
+                        <h4><p class="card-text">Coconut Water with Pulp</p></h4>
+                        <p>490ml <span style="margin: 10px"></span> Pack of 12</p>
+                        <p style="text-align: right;">$39.48</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-container-child" style="margin-top: 3.5%;">
+                    <div class="card" style="width: 22rem; padding: 3%;">
+                        <div class="card-img-top" style="background-color: rgba(240, 205, 27, 0.945);">
+                        <div class="parent">
+                            <img class="card-img-1" src="https://buddhabrands.ca/cdn/shop/files/Lines_600x.png?v=1676471949" />
+                            <img class="card-img-2" src="https://cdn.accentuate.io/6305467793596/1676120378555/seller1-hover.png?v=1676120378555" />
+                        </div>
+                        </div>
+                        <div class="card-body">
+                        <h4><p class="card-text">Premium Organic Coconut Water 12x1L</p></h4>
+                        <p>1L <span style="margin: 10px"></span> Pack of 12</p>
+                        <p style="text-align: right;">$77.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-container-child" style= "margin-top: 3.5%;">
+                    <div class="card" style="width: 22rem; padding: 3%;">
+                        <div class="card-img-top" style="background-color: rgba(240, 205, 27, 0.945);">
+                        <div class="parent">
+                            <img class="card-img-1" src="https://buddhabrands.ca/cdn/shop/files/Lines_600x.png?v=1676471949" />
+                            <img class="card-img-2" src="https://cdn.accentuate.io/6305467793596/1676120378555/seller1-hover.png?v=1676120378555" />
+                        </div>
+                        </div>
+                        <div class="card-body">
+                        <h4><p class="card-text">Premium Organic Coconut Water 500ml</p></h4>
+                        <p>500ml <span style="margin: 10px"></span> Pack of 12</p>
+                        <p style="text-align: right;">$41.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-container-child" style="margin-top: 3.5%; margin-right: 5%;">
+                    <div class="card" style="width: 22rem; padding: 3%;">
+                        <div class="card-img-top" style="background-color: rgba(240, 205, 27, 0.945);">
+                        <div class="parent">
+                            <img class="card-img-1" src="https://buddhabrands.ca/cdn/shop/files/Lines_600x.png?v=1676471949" />
+                            <img class="card-img-2" src="https://cdn.accentuate.io/6305467793596/1676120378555/seller1-hover.png?v=1676120378555" />
+                        </div>
+                        </div>
+                        <div class="card-body">
+                        <h4><p class="card-text">Premium Organic Coconut Water 6x1L</p></h4>
+                        <p>1L <span style="margin: 10px"></span> Pack of 6</p>
+                        <p style="text-align: right;">$40.99</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="cart-container-child">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="cart-container-child">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="cart-container-child">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </div>
+        <!-- Right Scroll Button -->
+        <button class="scroll-right" style="position: absolute; top: 70%; right: 10px; transform: translateY(-50%); z-index: 10; background-color: #fff; border: none; cursor: pointer; padding: 10px; height: 50px; width: 50px;">
+            &#10095;
+        </button>
     </div>
+
+    <!-- Scroll button js -->
+    <script>
+        // Get the elements
+        const scrollContainer = document.querySelector('.cart-container');
+        const scrollLeftButton = document.querySelector('.scroll-left');
+        const scrollRightButton = document.querySelector('.scroll-right');
+    
+        // Scroll left function
+        scrollLeftButton.addEventListener('click', () => {
+            scrollContainer.scrollBy({
+                left: -300, // Scroll left by 300px
+                behavior: 'smooth'
+            });
+        });
+    
+        // Scroll right function
+        scrollRightButton.addEventListener('click', () => {
+            scrollContainer.scrollBy({
+                left: 300, // Scroll right by 300px
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
+    <!-- Wave 2 -->
+    <div class="Ocean-2">
+  
+        <svg class="Wave-2" viewBox="0 0 12960 1120">
+          
+          <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z">
+            
+              <animate
+                  dur="5s"
+                  repeatCount="indefinite"
+                  attributeName="d"
+                  values="
+                    M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z;
+                    M9720,0C8100,0,8100,319,6480,319S4860,0,3240,0,1620,320,0,320v800H12960V320C11340,320,11340,0,9720,0Z;
+                    M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z
+                  "/>
+            
+          </path>
+          
+        </svg>
+        
+      </div>
 
 
     <!-- JS file link -->

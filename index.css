@@ -118,13 +118,72 @@ p {
     }
 }
 
-/* Cart Container */
+/* card scroll button css */
 .cart-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    overflow-x: hidden; /* Hide the scrollbar, but enable scrolling */
+    scroll-behavior: smooth;
+    gap: 20px; /* Space between cards */
 }
-.cart-container-child {
-    padding: 10%;
+
+.cart-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.scroll-container {
+    position: relative;
+    width: 100%; /* Make sure container takes full width */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.scroll-left, .scroll-right {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#card-img {
+    width: 270px;
+    margin-left: 165px;
+}
+
+/* Wave 2 */
+.Ocean-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #bfe6fff5;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+}
+.Wave-2 {
+    width: 3000px;
+    animation-name: swell;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: #77c9fcf5;
+    z-index: 2;
+    position: relative;
+}
+  @keyframes swell {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
 }
 
 /* Google translate button */
@@ -143,4 +202,24 @@ p {
   }
 .goog-te-gadget-simple  span {
      color:#3e3065 !important;
+}
+
+/* Card image */
+.card-img-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 75px;
+    height: 198px;
+    width: 300px;
+    z-index: 1;
+}
+.card-img-2 {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    width: 155px;
+    z-index: 1;
 }

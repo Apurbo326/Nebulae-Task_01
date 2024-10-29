@@ -156,6 +156,48 @@ p {
     margin-left: 165px;
 }
 
+/* Cart section */
+.cart-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 50px 0; 
+}
+.cart-container-child {
+    margin: 0 1%; 
+    flex: 1;
+    display: flex;
+}
+.card {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 10px;
+    margin: 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+.card-body {
+    flex: 1; 
+}
+.card-img-top {
+    margin-bottom: 10px; 
+}
+.cart-container-child:first-child .button {
+    width: 100px; 
+    margin-top: 10px; 
+}
+
+.cart-container-child:first-child .card{
+    padding: 40px;
+}
+
+.cart-container-child:first-child .card:hover {
+    background-color: #77c9fcf5;
+}
+
 /* Wave 2 */
 .Ocean-2 {
     display: flex;
@@ -196,7 +238,7 @@ p {
     position: relative;
     height: -100px;
 }
-.two {
+.container2-child.two {
     padding: 10%;
     top: -210px;
     z-index: 2;
@@ -296,23 +338,6 @@ p {
     flex-wrap: wrap; /* Allows wrapping if content overflows */
 }
 
-.input-footer {
-    width: 80%;
-}
-
-.h3-footer, .h4-footer-address {
-    text-align: left;
-}
-
-.h6-footer {
-    width: 80%;
-}
-
-.footer-email-address {
-    padding: 1rem 0;
-    display: none;
-}
-
 .footer-link {
     display: flex;
     flex-direction: column;
@@ -332,8 +357,8 @@ p {
 
 .footer-end {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center; 
     padding: .5rem;
 }
 
@@ -341,24 +366,23 @@ p {
     text-align: left;
     margin-left: 40px;
     padding-top: 1rem;
+    flex: 1; 
 }
 
 .footer-end-link {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start; /* Align links to the left */
-    gap: 20px; /* Adds spacing between each link */
+    justify-content: flex-end; 
+    gap: 30px; 
+    flex: 1;
+    padding-right: 90px;
 }
 
 .footer-end-link .link {
     text-decoration: none;
     font-size: 14px;
-    color: inherit; /* Inherit color from parent for consistency */
+    color: inherit; 
 }
 
-.footer-end-link .link:last-child {
-    margin-right: 0;
-}
 
 /* Optional media queries for responsiveness */
 @media (max-width: 768px) {

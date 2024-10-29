@@ -99,25 +99,27 @@ p {
     z-index: 2;
     pointer-events: none;
 }
+
 .Wave {
-    width: 3000px;
+    width: 200%; /* Increase width for smoother transition */
     animation-name: swell;
-    animation-duration: 4s;
+    animation-duration: 10s; /* Slow down the animation for a smoother effect */
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     fill: #bfe6fff5;
     z-index: 2;
-    position: relative;
 }
-  @keyframes swell {
+
+@keyframes swell {
     0% {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     100% {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
+
 
 /* card scroll button css */
 .cart-container {
@@ -209,10 +211,11 @@ p {
     z-index: 2;
     pointer-events: none;
 }
+
 .Wave-2 {
-    width: 3000px;
+    width: 200%; /* Increase width for smoother transition */
     animation-name: swell;
-    animation-duration: 4s;
+    animation-duration: 10s; /* Slow down the animation for a smoother effect */
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -220,12 +223,13 @@ p {
     z-index: 2;
     position: relative;
 }
-  @keyframes swell {
+
+@keyframes swell {
     0% {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     100% {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
@@ -383,6 +387,26 @@ p {
     color: inherit; 
 }
 
+/* footer end image */
+.responsive-image {
+    margin-left: 20px; /* Default margin */
+    width: 100%; /* Make it responsive */
+    max-width: 1500px; /* Set max width for larger screens */
+    padding: 25px; 
+    padding-bottom: 75px; 
+}
+
+@media screen and (min-width: 1600px) {
+    .responsive-image {
+        margin-left: 20px; /* Maintain margin for larger screens */
+        width: 1550px; /* Set specific width for larger screens */
+    }
+}
+@media screen and (max-width: 1599px) {
+    .responsive-image {
+        display: none;
+    }
+}
 
 /* Optional media queries for responsiveness */
 @media (max-width: 768px) {

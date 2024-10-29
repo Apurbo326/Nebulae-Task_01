@@ -399,7 +399,7 @@ p {
 @media screen and (min-width: 1300px) {
     .responsive-image {
         margin-left: 20px; 
-        width: 1250px; 
+        width: 1500px; 
     }
 }
 @media screen and (max-width: 1299px) {

@@ -389,24 +389,26 @@ p {
 
 /* footer end image */
 .responsive-image {
-    margin-left: 20px; /* Default margin */
-    width: 100%; /* Make it responsive */
-    max-width: 1500px; /* Set max width for larger screens */
+    margin-left: 20px; 
+    width: 100%; 
+    max-width: 1500px; 
     padding: 25px; 
     padding-bottom: 75px; 
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1300px) {
     .responsive-image {
-        margin-left: 20px; /* Maintain margin for larger screens */
-        width: 1550px; /* Set specific width for larger screens */
+        margin-left: 20px; 
+        width: 1125px; 
     }
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1299px) {
     .responsive-image {
         display: none;
     }
 }
+/* footer end image end*/
+
 
 /* Optional media queries for responsiveness */
 @media (max-width: 768px) {

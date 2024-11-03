@@ -395,17 +395,6 @@ p {
     padding-bottom: 75px; 
 }
 
-@media screen and (min-width: 1300px) {
-    .responsive-image {
-        width: 100%; 
-        text-align: center;
-    }
-}
-@media screen and (max-width: 1300px) {
-    .responsive-image {
-        display: none;
-    }
-}
 /* footer end image end*/
 
 

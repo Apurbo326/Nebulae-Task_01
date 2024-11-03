@@ -398,11 +398,12 @@ p {
 
 @media screen and (min-width: 1300px) {
     .responsive-image {
-        margin-left: 20px; 
-        width: 1500px; 
+        width: 100%; 
+        text-align: center;
+        padding-right: 150px;
     }
 }
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1300px) {
     .responsive-image {
         display: none;
     }

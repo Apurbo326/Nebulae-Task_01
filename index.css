@@ -400,7 +400,6 @@ p {
     .responsive-image {
         width: 100%; 
         text-align: center;
-        padding-right: 150px;
     }
 }
 @media screen and (max-width: 1300px) {
